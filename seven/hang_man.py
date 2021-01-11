@@ -9,7 +9,6 @@ print(hangman_art.logo)
 #Randomly choose a word from the word_list
 chosen_word = random.choice(word_list)
 word_len = len(chosen_word)
-print(chosen_word)
 display = []
 for l in range(word_len):
     display += '_'
