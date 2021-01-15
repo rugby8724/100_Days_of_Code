@@ -58,10 +58,13 @@ def blackjack():
     if dealer_score > 21:
         return (f'The Dealer {dealer_cards} busted with {dealer_score}. You Win!!!')
     elif player_score == dealer_score:
+        os.system('clear')
         return(f'Looks like there is a tie Dealer: {dealer_score} Player: {player_score}')
     elif player_score > dealer_score:
+        os.system('clear')
         return player_final + str('\n') + dealer_final + str('\n You Win!!!')
     else:
+        os.system('clear')
         return player_final + str('\n') + dealer_final + str('\n Dealer Wins')
 
 new_game = True
