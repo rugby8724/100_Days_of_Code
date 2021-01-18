@@ -4,12 +4,14 @@ import os
 from game_data import data
 from art import logo, vs
 
+
 def new_insta(insta1=''):
     insta2 = random.choice(list(data))
     if insta2['name'] == insta1:
         new_insta(insta1)
     else:
         return insta2
+
 
 def insta_compare(insta1, insta2, pick):
     pick_1 = insta1['follower_count']
@@ -21,8 +23,7 @@ def insta_compare(insta1, insta2, pick):
 
 
 def play_game():
-
-
+    
     insta_2 = new_insta()
     count = 0
     correct = True
@@ -43,5 +44,6 @@ def play_game():
         count += compare_insta[1]
         os.system('clear')
     print(f'Sorry you\'re wrong, you got {count} correct')
+
 
 play_game()
