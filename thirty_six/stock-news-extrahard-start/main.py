@@ -67,7 +67,7 @@ if two_days_ago_close * .95 >= yesterday_close or yesterday_close >= two_days_ag
         brief = news_data[i]['description']
         article = {'Headline': headline, 'Brief': brief}
         news.append(article)
-        
+
     proxy_client = TwilioHttpClient()
     proxy_client.session = {'https': os.environ['https_proxy']}
     client = Client(TWILIO_SID, TWILIO_TOKEN, http_client=proxy_client)
