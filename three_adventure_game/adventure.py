@@ -36,11 +36,11 @@ if direction.lower() == 'left':
 else:
   print('A head you see a hungry grizzley bear')
   print('You can\'t remember if you should curl into a ball or make yourself seem large')
-  print('Which one is it..or wait it\'s to late the grizzly bear is having you for a nice snack. GAME OVER ')
+  print('Which one_band_name_generator is it..or wait it\'s to late the grizzly bear is having you for a nice snack. GAME OVER ')
 if lake.lower() == 'wait':
   print('It takes awhile but you safely make it across the lake')
   print('In front of you is a large house with 3 different colored doors.')
-  print('One door is green, one blue, and one yellow. Which door will you open?')
+  print('One door is green, one_band_name_generator blue, and one_band_name_generator yellow. Which door will you open?')
   door = input('green, blue, yellow?')
 elif lake.lower() == 'swim':
   print('Did you forget that you can\'t swim...GAME OVER')

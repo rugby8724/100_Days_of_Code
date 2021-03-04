@@ -26,7 +26,7 @@ while not game_over:
         guess = input('Please pick a letter? ').lower()
     else:
         guessed_letters += guess
-#Check if the letter the user guessed is one of the letters in the chosen_word.
+#Check if the letter the user guessed is one_band_name_generator of the letters in the chosen_word.
 
     if guess not in chosen_word:
         chances -= 1
