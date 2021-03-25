@@ -4,9 +4,10 @@ import random
 import smtplib
 import os
 import datetime as dt
+from dotenv import load_dotenv
 
-my_email = 'tadtesting24@gmail.com'
-password = 'Onehundred100'
+my_email = os.environ.get('MY_EMAIL')
+password = os.environ.get('EMAIL_PASS')
 
 # 1. Update the birthdays.csv
 df = pd.read_csv('birthdays.csv')
