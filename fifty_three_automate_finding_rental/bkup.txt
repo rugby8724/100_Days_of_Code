@@ -1,0 +1,48 @@
+# rental_form = os.environ.get('RENTAL_FORM')
+# apt_url = os.environ.get('APT_URL')
+#
+# headers = {
+#     'User-Agent': os.environ.get('USER_AGENT'),
+#     'Accept-Language': os.environ.get('LANGUAGE')
+# }
+#
+# response = requests.get(apt_url, headers=headers)
+# apt_web = response.text
+#
+# soup = BeautifulSoup(apt_web, 'html.parser')
+#
+# apt_link = soup.select('.list-card-link')
+#
+# apt_links = []
+#
+# for apt in apt_link:
+#     a_link = apt.get('href')
+#     if a_link[0] != 'h':
+#         a_link = 'https://www.zillow.com' + a_link
+#     apt_links.append(a_link)
+#
+# apt_price = soup.select('.list-card-price')
+#
+# apt_prices = []
+#
+# for apt in apt_price:
+#     apt = apt.getText()
+#     if '+' in apt:
+#         apt_prices.append(apt.split('+')[0])
+#     elif '/' in apt:
+#         apt_prices.append(apt.split('/')[0])
+#     elif ' ' in apt:
+#         apt_prices.append(apt.split(' ')[0])
+#     else:
+#         apt_prices.append(apt)
+#
+# apt_address = soup.select('.list-card-addr')
+#
+# apt_addresses = []
+#
+# for apt in apt_address:
+#     apt = apt.getText()
+#     if '|' in apt:
+#         apt_addresses.append(apt.split('| ')[1])
+#     else:
+#         apt_addresses.append(apt)
