@@ -1,21 +1,42 @@
 body {
   font-family: Montserrat;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat-Bold', sans-serif;
 }
 
 
-#title {
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading{
+  font-family: 'Montserrat-Black', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
   background-color: #ff4c68;
   color: #fff;
 }
 
-.container-fluid {
-  padding: 3% 15%;
-}
-
-h1 {
-  font-family: 'Montserrat:wght@900&display=swap', sans-serif;
-  font-size: 3.5rem;
-  line-height: 1.5;
+.white-section{
+  background-color: #fff;
 }
 
 /* NavBar */
@@ -37,6 +58,13 @@ h1 {
   font-family: 'Montserrat-Light', sans-serif;
 }
 
+#title .container-fluid {
+  text-align: left;
+  padding: 3% 15% 7%;
+}
+
+
+
 /* Download Buttons */
 .download-btn {
   margin: 5% 3% 5% 0;
@@ -46,5 +74,104 @@ h1 {
 .title-img {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%
 
+}
+
+.iphone-container{
+    position: relative;
+}
+
+/* Features section */
+
+#features {
+  position: relative;
+}
+
+.feature-title{
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.icon {
+  color: #ff4c68;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ef8172;
+}
+
+/* Testimonials section  */
+
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-img {
+  margin: 1.2rem;
+  width: 15%;
+  border-radius: 100%;
+}
+
+
+/* Press section */
+
+#press {
+  padding-bottom: 3%;
+  background-color: #ef8172;
+}
+
+.press-img {
+  margin: 1.2rem 1.2rem 2.7rem;
+  width: 15%;
+}
+
+/* Pricing section */
+
+#pricing {
+  padding: 75px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+/* Call to action section */
+
+
+/* footer section */
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+
+@media screen and (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+  .iphone-container {
+    position: static;
+  }
+
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  }
 }
