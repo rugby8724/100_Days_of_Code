@@ -9,19 +9,5 @@ Login
         <div class="container">
 		<h1>Login</h1>
 			{{ wtf.quick_form(form, novalidate=True) }}
-<!--			{{ form.csrf_token }}-->
-<!--			<p>-->
-<!--			{{ form.email.label }} <br> {{ form.email(size=30) }}-->
-<!--				{% if form.email.errors %}-->
-<!--				<ul class="errors">{% for error in form.email.errors %}<li>{{ error }}</li>{% endfor %}</ul>-->
-<!--				{% endif %}-->
-<!--			</p>-->
-<!--			<p>-->
-<!--			{{ form.password.label }} <br> {{ form.password(size=30) }}-->
-<!--				{% if form.password.errors %}-->
-<!--				<ul class="errors">{% for error in form.password.errors %}<li>{{ error }}</li>{% endfor %}</ul>-->
-<!--				{% endif %}-->
-<!--			</p>-->
-<!--			{{ form.submit }}-->
         </div>
 {% endblock %}
