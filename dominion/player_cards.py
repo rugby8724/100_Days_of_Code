@@ -17,13 +17,13 @@ class PlayerCards:
             self.playercardpile.append('estate')
         self.pile_shuffle(self.playercardpile)
 
-    def draw_extra_card(self):
+    def draw_card(self):
         self.playerhand.append(self.playercardpile.pop())
 
 
     def draw_hand(self, ):
         for i in range(3):
-            self.draw_extra_card()
+            self.draw_card()
 
 
 
